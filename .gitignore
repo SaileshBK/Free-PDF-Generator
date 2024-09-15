@@ -1,0 +1,68 @@
+# Ignore build outputs
+bin/
+obj/
+
+# Ignore user-specific files
+*.user
+*.rsuser
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Auto-generated VS/JetBrains files
+.VS/
+.vscode/
+.idea/
+*.code-workspace
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Rider specific files
+.idea/
+.idea_modules/
+.idea/
+
+# Backup and metadata files
+*.bak
+*.swp
+*.orig
+
+# Build artifacts
+*.dll
+*.exe
+*.app
+*.so
+*.dylib
+*.log
+*.pdb
+
+# NuGet packages
+*.nupkg
+*.snupkg
+.nuget/
+packages/
+
+# Project lock files
+project.lock.json
+project.fragment.lock.json
+
+# ASP.NET Scaffolding
+ScaffoldingReadMe.txt
+
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+
+# Folder config file
+Desktop.ini
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# Windows shortcuts
+*.lnk
