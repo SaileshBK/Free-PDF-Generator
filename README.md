@@ -12,7 +12,7 @@ A simple and free PDF generator.
 To get started with the Free PDF Generator, follow these steps:
 
 1. Clone the repository
-2. start the application and1 navigate to the bin folder where the output.pdf will be stored.
+2. Start the application and navigate to the bin folder where the output.pdf will be stored.
 
 ## Contributing
 
