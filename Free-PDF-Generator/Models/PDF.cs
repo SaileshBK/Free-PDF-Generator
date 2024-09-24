@@ -1,8 +1,11 @@
 ﻿namespace Free_PDF_Generator.Models;
 
-public class PDF
-{
-    public string Name { get; set; }
-    public string Number { get; set; }
-    public DateOnly Date { get; set; }
-}
+public record PDF(
+    string Name,
+    string? Number,
+    DateOnly Date,
+    string? Title,
+    string? Author,
+    string? Content,
+    int PageCount,
+    DateTime CreatedDate);

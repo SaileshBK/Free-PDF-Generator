@@ -1,7 +1,54 @@
-﻿<h3>PDF</h3>
+﻿@page "/pdf-preview"
+@using Free_PDF_Generator.Models
 
 @code {
-
-	[Parameter] public Free_PDF_Generator.Models.PDF pdf { get; set; }
+    [Parameter] public Free_PDF_Generator.Models.PDF? PDFData { get; set; }
 }
 
+<h3>PDF Preview</h3>
+
+<div class="pdf-preview">
+    <div class="pdf-field">
+        <strong>Name:</strong> @PDFData?.Name
+    </div>
+    <div class="pdf-field">
+        <strong>Number:</strong> @PDFData?.Number
+    </div>
+    <div class="pdf-field">
+        <strong>Date:</strong> @PDFData?.Date.ToString("yyyy-MM-dd")
+    </div>
+    <div class="pdf-field">
+        <strong>Title:</strong> @PDFData?.Title
+    </div>
+    <div class="pdf-field">
+        <strong>Author:</strong> @PDFData?.Author
+    </div>
+    <div class="pdf-field">
+        <strong>Content:</strong>
+        <p>@PDFData?.Content</p>
+    </div>
+    <div class="pdf-field">
+        <strong>Page Count:</strong> @PDFData?.PageCount
+    </div>
+    <div class="pdf-field">
+        <strong>Created Date:</strong> @PDFData?.CreatedDate.ToString("yyyy-MM-dd HH:mm")
+    </div>
+</div>
+
+<style>
+    .pdf-preview {
+        padding: 15px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        margin-top: 10px;
+    }
+
+    .pdf-field {
+        margin-bottom: 10px;
+    }
+
+    .pdf-field strong {
+        display: inline-block;
+        width: 120px;
+    }
+</style>

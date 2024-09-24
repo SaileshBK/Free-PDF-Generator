@@ -16,7 +16,7 @@ internal static class HtmlGenerator
         {
             var dictionary = new Dictionary<string, object?>
             {
-                { "pdf", pdfData }
+                { "PDFData", pdfData }
             };
 
             var parameter = ParameterView.FromDictionary(dictionary);
