@@ -3,6 +3,9 @@
 
 A simple and free PDF generator.
 
+## Preview
+<img src="./Sample/output-example.png"/>
+
 ## Features
 
 - Manual PDF generation using Microsoft.Playwright without any paid services.
